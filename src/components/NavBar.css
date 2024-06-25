@@ -1,0 +1,99 @@
+.navbar-section {
+  border-bottom: #757474;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  background: #27272793;
+}
+.logo-wrapper {
+  padding: 0.6rem 1rem;
+  display: flex;
+  margin-left: 1rem;
+  background: none;
+}
+.logo {
+  height: 5rem;
+  margin-right: 1rem;
+  background-color: none;
+}
+.logo-name {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-content: center;
+}
+.logo-name h2 {
+  font-size: 25px;
+  font-weight: 400;
+  letter-spacing: 3px;
+  text-align: center;
+  color: var(--color-primary-gold);
+}
+.logo-name p {
+  font-family: "Oswald", sans-serif;
+  font-size: 12px;
+  color: #d4d4d4;
+  font-weight: 400;
+  letter-spacing: 3px;
+
+  text-align: center;
+}
+
+.navbar-links ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 2.5rem;
+}
+
+.navbar-links {
+  margin-right: 2rem;
+}
+
+.navbar-links ul li {
+  font-size: 15px;
+  font-weight: 300;
+  letter-spacing: 4px;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+  transform: scale(100%);
+  cursor: pointer;
+  transition: all ease 0.3s;
+}
+
+.navbar-links ul li:hover {
+  color: var(--color-primary-gold);
+  transform: scale(110%);
+}
+
+@media (max-width: 830px) {
+  .navbar-links ul {
+    display: none;
+  }
+}
+
+.toggle-icon {
+  cursor: pointer;
+  display: none;
+}
+.toggle-icon svg {
+  color: var(--color-primary-gold);
+  transform: scale(100%);
+  transition: all ease 0.3s;
+}
+
+.toggle-icon svg:hover {
+  color: white;
+  transform: scale(110%);
+}
+
+@media (max-width: 830px) {
+  .navbar-links .toggle-icon {
+    display: block;
+  }
+}

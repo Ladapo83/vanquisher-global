@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Oswald:wght@200..700&display=swap");
+/* :root {
+  font-family: "Oswald", sans-serif;
+
+  font-weight: 400;
+  color: #eadd98;
+  font-style: normal;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --color-primary-gold: #eadd98;
+  --color-grey-dark: #272727;
+  --color-white: #ffffff;
+  --color-greytext: #999;
+
+  --color-black: black;
+} */
+
+:root {
+  font-family: "Oswald", sans-serif;
+
+  font-weight: 400;
+  color: #eadd98;
+  font-style: normal;
+
+  /* color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; */
+
+  --color-primary-gold: #eadd98;
+  --color-grey-dark: #272727;
+  --color-white: #ffffff;
+  --color-greytext: #999;
+
+  --color-black: black;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #585858;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #8b8989;
+  border-radius: 20px;
+}
+
+body {
+  color: white;
+  background-color: var(--color-grey-dark);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p {
+  font-family: "Didact Gothic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--color-white);
+}
+
+a {
+  font-family: "Didact Gothic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--color-greytext);
+}
+a:hover {
+  color: var(--color-white);
+}
+
+h1 {
+  font-size: 1.4rem;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  color: white;
+  letter-spacing: 10px;
+  word-spacing: 5px;
+
+  text-transform: uppercase;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  color: var(--color-primary-gold);
+}
+button:hover {
+  background-color: var(--color-primary-gold);
+  color: var(--color-grey-dark);
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+/* @media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+} */

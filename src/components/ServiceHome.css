@@ -1,0 +1,62 @@
+.service-home-section {
+  max-width: 1300px;
+  margin: 2rem auto;
+  padding: 20px 50px;
+  position: relative;
+}
+
+.service-header {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.service-header span {
+  color: var(--color-primary-gold);
+}
+
+.service-main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+@media (max-width: 720px) {
+  .service-main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+
+.service-card {
+  display: flex;
+
+  gap: 1rem;
+  border: #eadc984c solid 1px;
+  padding: 2rem;
+}
+
+.icon h3 {
+  font-size: 18px;
+  font-weight: 300;
+
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.icon h2 {
+  color: #eadc9860;
+  letter-spacing: 4px;
+  font-size: 2rem;
+}
+
+.icon p {
+  text-align: justify;
+  font-family: "Didact Gothic", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4rem;
+  color: #999;
+}

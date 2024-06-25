@@ -1,0 +1,179 @@
+.hero-section {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-image {
+  width: 100%;
+  opacity: 35%;
+  min-height: 250px;
+  max-height: 550px;
+  object-fit: cover;
+  margin-top: 100px;
+  animation-name: fadeIn;
+  animation-duration: 1s;
+
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: backwards;
+}
+
+.hero-banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 35%;
+  }
+}
+
+@keyframes moveInBanner {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+  100% {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+
+.hero-logo-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.hero-logo {
+  height: 9rem;
+  animation-name: moveInBanner;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: backwards;
+}
+
+.hero-logo-name h2 {
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: 3px;
+  text-align: center;
+}
+.hero-logo-name p {
+  font-family: "Oswald", sans-serif;
+  font-size: 1rem;
+  color: #d4d4d4;
+  font-weight: 400;
+  letter-spacing: 3px;
+
+  text-align: center;
+}
+
+.hero-text {
+  text-align: center;
+  animation-name: moveInBanner;
+  animation-duration: 1s;
+  animation-delay: 1.5s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: backwards;
+}
+
+.hero-text p {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.4rem;
+  color: #d4d4d4;
+  font-weight: 400;
+  letter-spacing: 3px;
+}
+
+.hero-text h2 {
+  letter-spacing: 5px;
+  font-size: 2rem;
+  color: var(--color-primary-gold);
+}
+
+@media (max-width: 1300px) {
+  .hero-logo {
+    height: 7.6rem;
+  }
+
+  .hero-text p {
+    font-family: "Oswald", sans-serif;
+    font-size: 1.3rem;
+    color: #d4d4d4;
+    font-weight: 400;
+    letter-spacing: 3px;
+  }
+
+  .hero-text h2 {
+    letter-spacing: 5px;
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 970px) {
+  .hero-logo {
+    height: 7rem;
+  }
+
+  .hero-text p {
+    font-family: "Oswald", sans-serif;
+    font-size: 1rem;
+    color: #d4d4d4;
+    font-weight: 400;
+    letter-spacing: 3px;
+  }
+
+  .hero-text h2 {
+    letter-spacing: 5px;
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .hero-logo {
+    height: 6.8rem;
+  }
+
+  .hero-text p {
+    font-family: "Oswald", sans-serif;
+    font-size: 1rem;
+    color: #d4d4d4;
+    font-weight: 400;
+    letter-spacing: 3px;
+  }
+
+  .hero-text h2 {
+    letter-spacing: 5px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 377px) {
+  .hero-logo {
+    height: 6rem;
+  }
+
+  .hero-text p {
+    font-family: "Oswald", sans-serif;
+    font-size: 0.8rem;
+    color: #d4d4d4;
+    font-weight: 400;
+    letter-spacing: 3px;
+  }
+
+  .hero-text h2 {
+    letter-spacing: 5px;
+    font-size: 1rem;
+  }
+}
